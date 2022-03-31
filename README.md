@@ -120,7 +120,7 @@ with `"employeeId" : {id}`.
 
 4. Lastly, we test our implementation in 
 [ReportingStructureServiceImplTest](src/test/java/com/mindex/challenge/service/impl/ReportingStructureServiceImplTest.java).
-The subject chosen for the test is`Ringo Starr`, though any other `employee` would do. 
+The subject chosen for the test is `Ringo Starr`, though any other `employee` would do. 
 
 
 We can now see the number of reports by each employee either via a browser or a terminal. For instance, for 
@@ -205,7 +205,7 @@ create and read salary entries from
 
 4. Lastly, we test our implementations in 
 [CompensationServiceImplTest](src/test/java/com/mindex/challenge/service/impl/CompensationServiceImplTest.java).
-The subject chosen for the test this time is`Pete Best`, though, again, any other `employee` would do.
+The subject chosen for the test this time is `Pete Best`, though, again, any other `employee` would do.
 
 
 We can now set and read salary entries for any `employee`. For instance, we may set the salary for `Paul McCartney`
@@ -213,7 +213,7 @@ to be `$500,000` as follows:
 ```bash
 $ curl -X POST localhost:8080/compensation -H 'Content-type:application/json' -d '{"employeeId" : "b7839309-3348-463b-a7e3-5de1c168beb3", "effectiveDate" : "2022-03-30T19:41:01.352+0000", "salary" : 500000.00}'
 ```
-We then may then read the data by typing
+We may then read the data by typing on the terminal
 ```bash
 $ curl -X GET localhost:8080/b7839309-3348-463b-a7e3-5de1c168beb3/compensation
 ```
